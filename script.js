@@ -16,7 +16,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Apply fade-in to sections
 document.querySelectorAll(
-  '.feature-card, .gallery-phone, .philosophy-card, .pricing-card, .proof-item, .section-eyebrow, .section-title, .section-subtitle, .pricing-lifetime-banner'
+  '.feature-card, .gallery-phone, .philosophy-card, .proof-item, .section-eyebrow, .section-title, .section-subtitle'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
@@ -27,10 +27,7 @@ document.querySelectorAll('.feature-card').forEach((card, i) => {
   card.style.transitionDelay = `${i * 80}ms`;
 });
 
-// Stagger pricing cards
-document.querySelectorAll('.pricing-card').forEach((card, i) => {
-  card.style.transitionDelay = `${i * 100}ms`;
-});
+
 
 // Stagger gallery phones (center first, then sides)
 document.querySelectorAll('.gallery-phone').forEach((phone, i) => {
