@@ -340,7 +340,7 @@ em {
 
 .phone-frame {
   width: 280px;
-  height: 580px;
+  aspect-ratio: 1320 / 2868;
   border-radius: 40px;
   overflow: hidden;
   position: relative;
@@ -372,7 +372,6 @@ em {
 
 .phone-frame-sm {
   width: 240px;
-  height: 500px;
   border-radius: 34px;
 }
 
@@ -701,13 +700,11 @@ em {
 
   .phone-frame {
     width: 220px;
-    height: 460px;
     border-radius: 32px;
   }
 
   .phone-frame-sm {
     width: 180px;
-    height: 380px;
     border-radius: 28px;
   }
 
@@ -769,7 +766,6 @@ em {
 
   .phone-frame, .phone-frame-sm {
     width: 260px;
-    height: 540px;
     border-radius: 38px;
   }
 
